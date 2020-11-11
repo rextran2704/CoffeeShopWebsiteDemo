@@ -1,0 +1,54 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="">
+            <result type="redirect">home</result>
+        </action>
+        <action name="home" class="com.coffee.controller.HomeAction">
+            <result>views/home.jsp</result>
+        </action>
+        <action name="menu" class="com.coffee.controller.MenuAction">
+            <result>views/menu.jsp</result>
+        </action>
+        <action name="find-us" class="com.coffee.controller.ContactDetailAction">
+            <result>views/find-us.jsp</result>
+        </action>
+        <action name="contact-us" class="com.coffee.controller.HomeAction" method="showContactForm">
+            <result>views/contact-us.jsp</result>
+        </action>
+        <action name="send-message" class="com.coffee.controller.ContactAction" method="sendMessage">
+            <result name="input">views/contact-us.jsp</result>
+            <result name="success" type="redirect">home</result>
+            <result name="error">views/fail.jsp</result>
+        </action>
+        <action name="login-form" class="com.coffee.controller.HomeAction" method="showLoginForm">
+            <result>views/login.jsp</result>
+        </action>
+    </package>
+    
+    <package name="account" extends="struts-default">
+        <action name="login" class="com.coffee.controller.AccountAction">
+            <result name="success" type="redirect">home</result>
+            <result name="error">views/fail.jsp</result>
+        </action>
+        <action name="logout" class="com.coffee.controller.AccountAction" method="logout">
+            <result type="redirect">home</result>
+        </action>
+    </package>
+    
+    <package name="product" extends="struts-default">
+        <action name="new-product" class="com.coffee.controller.ProductAction">
+            <result>views/new-product.jsp</result>
+        </action>
+        <action name="create-product" class="com.coffee.controller.ProductAction" method="createProduct">
+            <result type="redirect">menu</result>
+            <result name="input">views/new-product.jsp</result>
+            <result name="error">views/fail.jsp</result>
+        </action>
+    </package>
+
+</struts>

@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 1, 2020, 11:18:49 PM
+    Author     : Rex
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url('https://ecoparker.s3.ap-southeast-1.amazonaws.com/s3fs-public/styles/listing_detail_header/public/nha%20hang/45519673_2220682351539112_7646554049159888896_o_0.jpg?itok=MsMb6ThS'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+.container {
+    background-color: rgba(255,255,255,.9);
+    padding: 10px;
+    min-height: 92vh;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    padding: 0;
+}
+
+.nav-item {
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.signin-link {
+    background-color: #0062cc;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-left: auto;
+}
+
+.logo-image {
+    margin: auto;
+    padding: 0;
+}
+
+.signin-link:hover {
+    color: #ffffff;
+    opacity: .9;
+}
+
+.user-dropdown {
+    margin-left: auto;
+}
+
+.sidebar {
+    background-color: #e0f3ff;
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.sidebar-title {
+    color: #fa554d;
+    text-align: center;
+    font-size: 21px;
+}
+
+.sidebar-content {
+    margin: 5px 0;
+}
+
+.sidebar-link {
+
+}
+
+.sidebar-link:hover{
+    opacity: .9;
+}
+
+.page-title {
+    margin: 30px 0;
+}
+
+.carousel-inner img {
+    width: 100vw;
+    height: 92vh;
+}
+
+.image-info {
+    margin: auto;
+    padding: 0;
+}
+
+.signature-sign {
+    margin-top: 30px;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-size: 99px;
+    line-height: 60px;
+}
+/* Icon CSS */
+.fa {
+    padding: 10px;
+    margin: 0px 7px 7px;
+    font-size: 17px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: .9;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3b5998;
+    color: #ffffff;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram{ 
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1 );
+    color: white;
+}
+
+.hit-counter {
+    text-align: right;
+    margin-left: auto;
+}
+.hit-counter-number {
+    font-size: 21px;
+    padding: 2px;
+    background-color: #ffffff;
+    color:black;
+    border: 1px ridge black;
+}
+.page-footer {
+    color:rgba(255,255,255,.5);
+    background-color: #212529;
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        display: none;
+    }
+    .signin-link {
+        width: 20%;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .carousel-inner img {
+        height: 50vh;
+    }
+}

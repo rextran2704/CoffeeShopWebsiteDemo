@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 4, 2020, 10:45:22 AM
+    Author     : Rex
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+body {
+    background-image: url('../images/coffee-login-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container {
+    padding:0;
+    min-height: 79.1vh;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.signin-panel {
+    height: 370px;
+    margin: auto;
+    margin-top: 100px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.card-header h3 {
+    color: white;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border: 0 !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.btn-login{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background-color: rgb(255, 195, 18);
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s
+}
+
+.btn-login:hover {
+    color: black;
+    background-color: white;
+}
+
+.page-footer {
+    width: 100%;
+    color:rgba(255,255,255,.5);
+    background-color: #212529;
+}
